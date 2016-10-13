@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>帳號註冊</title>
+    <link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+</head>
+
+<body>
+    
+    
+    <div data-role="page">
+        <div data-role="content" data-inset="true">
+            <form method="post" action="http://jsapplab.site88.net/echo.php">
+<div class="content" style="top: 78px;"><h2 class="title">帳號註冊</h2>
+                <div data-role="fieldcontain">
+                    <label for="txtInputText">account:</label>
+                    <input type="text" name="txtName" id="idName" value="" placeholder="請輸入帳號" />
+                    <br />
+                    <label for="txtInputText">password:</label>
+                    <input type="password" name="txtEmail" id="idEmail" value="" placeholder="請輸入密碼" />
+        		    <label for="txtInputText">checkPassword:</label> 
+				    <input type="password"
+				    name="txtInputText" id="txtInputText" value="" placeholder="請確認密碼" />
+				    <br />
+				    <label for="txtInputText">Email:</label> 
+				    <input type="text" name="txtInputText" id="txtInputText" value="" placeholder="請輸入有效E-MAIL" />
+				    <br />
+				    <label for="txtInputText">Birthday:</label> 
+				    <input type="date" name="txtInputText" id="txtInputText" value="" placeholder="請輸入出生年月日" />
+			     </div>
+			     
+			     <fieldset data-role="controlgroup" data-type="horizontal">
+					<h4>請點選一隻代表:</h4>
+			     	<input type="radio" name="rdoPet" id="rdoPet0" value="0" checked="checked" />
+			     	<label for="rdoPet0">龐克熊貓</label>
+			
+			     	<input type="radio" name="rdoPet" id="rdoPet1" value="1"  />
+			     	<label for="rdoPet1">喵喵公主</label>
+			
+			     	<input type="radio" name="rdoPet" id="rdoPet2" value="2"  />
+			     	<label for="rdoPet2">紫羅蘭小鶯</label>
+			        
+			        <input type="radio" name="rdoPet" id="rdoPet3" value="3"  />
+			     	<label for="rdoPet3">賣萌柴柴</label>
+			
+			    </fieldset>
+			     
+			      <data-role="fieldcontain">
+				<label for="sltOnOff">請撥動按鈕至藍色證明非機器人:</label>
+				<select name="sltOnOff" id="sltOnOff" data-role="slider">
+					<option value="off"> </option>
+					<option value="on"> </option>
+				</select>
+			     
+			     	<fieldset data-role="controlgroup" data-inset="true">
+				<label><input type="checkbox" name="chkReading" />我同意 服務條款, 停權管理規章 和 隱私政策，同時也了解若我未滿20歲，我的法定代理人或監護人必須代表我完整檢閱和同意使用條款。
+</label>
+			     </fieldset>
+			   
+			    <div class="ui-grid-a">
+				<div class="ui-block-a"><input type="submit" name="btnOK" value="OK" /></div>
+				<div class="ui-block-b"><input type="submit" name="btnCancel" value="Cancel" /></div>
+			</div>
+
+            </form>
+        </div>
+
+
+    </div>
+    <!-- page content -->
+
+    </div>
+    <!-- page -->
+</body>
+
+</html>
